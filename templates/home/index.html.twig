@@ -1,0 +1,41 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Bonus drapeau{% endblock %}
+
+{% block body %}
+<style>
+    body {
+        margin: 20px;
+    }
+.drapeau {
+    width: 600px;
+    height: 400px;
+    border: 1px solid black;
+    box-shadow: 0 0 10px black;
+    display: flex;
+    margin-top: 20px;
+}
+.drapeau:hover {
+    box-shadow: 0 0 30px yellow;
+    cursor: pointer;
+}
+.color {
+    width: 200px;
+    height: 400px;
+}
+.blue {
+    background-color: blue;
+}
+.red {
+    background-color: red;
+}
+</style>
+Le fait de placer le drapeau français à l'envers est considéré comme une marque d'irrespect. <br>
+    Mais ceci peut aussi correspondre au signal de detresse pour les navires en pleine mer.
+
+    <div class="drapeau">
+        <div class="blue color"></div>
+        <div class="white color"></div>
+        <div class="red color"></div>
+    </div>
+{% endblock %}
